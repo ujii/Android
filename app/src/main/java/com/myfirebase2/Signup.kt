@@ -64,6 +64,9 @@ class Signup: AppCompatActivity() {
                         updateUI(user, name, birth)
                         Toast.makeText(this, "회원가입 성공", Toast.LENGTH_SHORT).show()
 
+                        val intent = Intent(this, Buying::class.java)
+                        startActivity(intent)
+
                     } else {
                         Toast.makeText(this, "비밀번호를 6자리 이상 설정하세요", Toast.LENGTH_SHORT).show()
                     }
